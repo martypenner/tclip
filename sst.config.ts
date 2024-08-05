@@ -42,7 +42,10 @@ export default $config({
           readOnly: false,
         },
       ],
-      envs: [$interpolate`TS_AUTHKEY=${tailnetKey.key}`],
+      envs: [
+        $interpolate`TS_AUTHKEY=${tailnetKey.key}`,
+        `TSNET_HOSTNAME=tclip`,
+      ],
     });
   },
 });
