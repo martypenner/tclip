@@ -30,7 +30,7 @@ export default $config({
 
     const appContainer = new docker.Container("tclip", {
       name: "tclip",
-      image: "ghcr.io/tailscale-dev/tclip:latest",
+      image: "ghcr.io/tailscale-dev/tclip:multiarch",
       hostname: "tclip",
       networksAdvanced: [{ name: appNetwork.name }],
       restart: "unless-stopped",
