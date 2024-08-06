@@ -45,6 +45,7 @@ export default $config({
       envs: [
         $interpolate`TS_AUTHKEY=${tailnetKey.key}`,
         `TSNET_HOSTNAME=tclip`,
+        `TSNET_FORCE_LOGIN=1`,
       ],
     });
   },
